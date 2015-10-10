@@ -1,5 +1,5 @@
 module Data.Matrix (
-  matrix
+  matrix, Matrix
 ) where
 
 import Data.Matrix.Construct
