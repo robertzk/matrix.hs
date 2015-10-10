@@ -15,6 +15,8 @@ data Matrix a = M {
  , vect :: V.Vector a
 }
 
+isSquareMatrix :: Matrix a => Bool
+isSquareMatrix = (==) (nrow a) (ncol a)
 
 
 
