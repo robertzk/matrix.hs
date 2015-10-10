@@ -15,10 +15,10 @@ data Matrix a = M {
  , vect :: V.Vector a
 }
 
-isSquareMatrix :: Matrix a  => a -> Bool
-isSquareMatrix = (==) (nrow a) (ncol a)
+isSquareMatrix :: Matrix a -> Bool
+isSquareMatrix m = (==) (nrow m) (ncol m)
 
-invertible :: Matrix a => a -> Bool
-invertible = (/=) 0 $ determinant a
+--invertible :: Matrix a => a -> Bool
+--invertible = (/=) 0 $ determinant a
 
 
