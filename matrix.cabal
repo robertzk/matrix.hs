@@ -49,9 +49,13 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 
-library
+Library
+  hs-source-dirs: ., src
+
   -- Modules exported by the library.
-  -- exposed-modules:     
+  exposed-modules:     
+    Data.Matrix
+    Data.Matrix.Construct
   
   -- Modules included in this library but not exported.
   -- other-modules:       
